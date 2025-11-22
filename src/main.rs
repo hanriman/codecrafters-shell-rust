@@ -8,6 +8,10 @@ fn main() {
         // wait for user input
         let mut command = String::new();
         io::stdin().read_line(&mut command).unwrap();
-        println!("{}: command not found", command.trim());
+
+        match command.trim() {
+            "exit" => std::process::exit(0),
+            _ => println!("{}: command not found", command.trim()),
+        }
     }
 }
