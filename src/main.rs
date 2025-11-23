@@ -48,7 +48,7 @@ fn main() {
                     println!("{}: command not found", cmd_name)
                 }
             }
-            Command::NotFound { cmd_not_found } => println!("{}: command not found", cmd_not_found),
+            Command::NotFound { cmd_not_found } => println!("{}: not found", cmd_not_found),
         }
     }
 }
